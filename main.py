@@ -1,8 +1,8 @@
 """def ausgabe_zahlen():
-    i = 0
-    while (i <= 10):
-        print(i)
-        i = i + 1
+    a = 0
+    while (a <= 10):
+        print(a)
+        a = a + 1
 ausgabe_zahlen()"""
 
 """summe = 0
