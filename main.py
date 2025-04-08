@@ -84,3 +84,17 @@ for i in range(len(liste)):
 for index, wert in enumerate(werte):
     print("Index", index, "Wert:", wert)"""
 
+"""anzahl = 6
+i = 0
+summe = 0
+temperaturen = [] #anlegen einer liste
+
+while i < anzahl:
+    print("Geben sie die {0}. Temperatur in °C ein: ".format(i+1))
+    eingabe = float(input())
+    temperaturen.append(eingabe) # element am ende der liste hinzufügen
+    summe = summe + temperaturen[i] #auf listenelement zugreifen
+    i = i + 1
+durchschnitt = summe / anzahl
+print("Der Temperaturendurchschnitt beträgt: ",durchschnitt)"""
+
