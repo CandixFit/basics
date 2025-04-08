@@ -134,4 +134,9 @@ for vierte in range(1):
         print("*", end="")
     print()"""    #for schleife um bestimmtes sternenbild anzugeben
 
+"""zahl = int(input("Zahl eingebne: "))
+fakultaet = 1
+for i in range(1, zahl + 1):
+    fakultaet *= i
+print(f"Die Fakultät von {zahl} ist {fakultaet}")""" #fakultaet berechnen
 
