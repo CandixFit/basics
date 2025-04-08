@@ -114,5 +114,24 @@ while i < anzahl:
 durchschnitt = summe / anzahl
 print("Der Temperaturendurchschnitt beträgt: ",durchschnitt)""" #selbe element mit zufallsgenerator
 
+"""for erste in range(1):
+    for sieben in range(7):
+        print("*", end="")
+    print()
+
+for zweite in range(1):
+    for fuenf in range(5):
+        print("*", end="")
+    print()
+
+for dritte in range(1):
+    for drei in range(3):
+        print("*", end="")
+    print()
+
+for vierte in range(1):
+    for vier in range(1):
+        print("*", end="")
+    print()"""    #for schleife um bestimmtes sternenbild anzugeben
 
 
