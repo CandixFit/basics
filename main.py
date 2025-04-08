@@ -98,3 +98,21 @@ while i < anzahl:
 durchschnitt = summe / anzahl
 print("Der Temperaturendurchschnitt beträgt: ",durchschnitt)"""
 
+"""import random
+anzahl = 6
+i = 0
+summe = 0
+temperaturen = [] #anlegen einer liste
+
+while i < anzahl:
+    print("Geben sie die {0}. Temperatur in °C ein: ".format(i+1))
+    eingabe = random.gauss(0, 10)
+    temperaturen.append(eingabe) # element am ende der liste hinzufügen
+    summe = summe + temperaturen[i] #auf listenelement zugreifen
+    i = i + 1
+    print(temperaturen)
+durchschnitt = summe / anzahl
+print("Der Temperaturendurchschnitt beträgt: ",durchschnitt)""" #selbe element mit zufallsgenerator
+
+
+
