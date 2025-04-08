@@ -1,2 +1,2 @@
 # functions, statements, boolean,
-things i do in school
+things i´ve learned so far
