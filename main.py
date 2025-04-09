@@ -140,3 +140,14 @@ for i in range(1, zahl + 1):
     fakultaet *= i
 print(f"Die Fakultät von {zahl} ist {fakultaet}")""" #fakultaet berechnen
 
+"""import json
+from datetime import datetime
+speicheroption = []
+def show_menu():
+    print("\nBitte Wählne")
+    print("1. Aufgabe hinzufügen")
+    print("2. alle Aufgaben anzeigen")
+    print("3. Aufgabe bearbeiten")
+    print("4. Aufgabe löschen")
+    print("5. Beenden")
+show_menu()"""
