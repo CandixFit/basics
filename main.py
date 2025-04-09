@@ -151,3 +151,17 @@ def show_menu():
     print("4. Aufgabe löschen")
     print("5. Beenden")
 show_menu()"""
+
+
+"""def to_camel_case(text):
+    if not text:
+        return text
+
+    words = text.replace('-',' ').replace('_', ' ').split()
+
+    camel_case = words[0] + ''.join(word.capitalize() for word in words[1:])
+    return camel_case
+
+print(to_camel_case("the-stealth-warrior"))  # Output: "theStealthWarrior"
+print(to_camel_case("The_Stealth_Warrior"))  # Output: "TheStealthWarrior"
+print(to_camel_case("The_Stealth-Warrior"))  # Output: "TheStealthWarrior""""
