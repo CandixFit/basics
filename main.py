@@ -165,3 +165,27 @@ show_menu()"""
 print(to_camel_case("the-stealth-warrior"))  # Output: "theStealthWarrior"
 print(to_camel_case("The_Stealth_Warrior"))  # Output: "TheStealthWarrior"
 print(to_camel_case("The_Stealth-Warrior"))  # Output: "TheStealthWarrior""""
+
+"""handle = open("text.txt", "r")
+inhalt = handle.read() #lesen mit dieser funktion die datei
+print(inhalt)
+handle.close()"""
+"""file = open("text.txt", "r")
+inhalt = file.read()
+print(inhalt)
+file.close()"""
+
+"""with open("text.txt", "r") as file:
+    inhalt = file.read()
+    file.readline(6) #byte begrenzzen
+    file.readlines()
+    print(inhalt)
+    file.close()"""
+
+#schreiben von textdateien
+"""text = "die regierung hat mir in die hosen gekackt11!11!"
+
+handle = open("text.txt", "w")
+geschrieben = handle.write(text)
+handle.close()
+print(text)"""
