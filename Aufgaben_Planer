@@ -1,0 +1,156 @@
+
+import json
+from datetime import datetime
+"""speicheroption = []
+def show_menu():
+    print("\nBitte Wählne")
+    print("1. Aufgabe hinzufügen")
+    print("2. alle Aufgaben anzeigen")
+    print("3. Aufgabe bearbeiten")
+    print("4. Aufgabe löschen")
+    print("5. Beenden")
+show_menu()
+wahl = int(input())
+def aufgabe_hinzufuegen():
+    aufgabe = input("Aufgabe eingeben: ")
+    speicheroption.append(aufgabe)
+    print(speicheroption)
+
+def aufgaben_anzeigen():
+    print(speicheroption)
+
+def aufgabe_bearbeiten():
+    print("Welche Aufgabe bearbeiten?: ")
+    print(len(speicheroption))
+
+
+def aufgabe_loeschen():
+    print("Welche Aufgabe entfernen?")
+    speicheroption.remove()
+    print(speicheroption)
+def beenden():
+    print("programm beendet.")
+    break
+
+while True:
+    if wahl == 1:
+        aufgabe_hinzufuegen()
+    if wahl == 2:
+        aufgaben_anzeigen()
+    if wahl == 3:
+        aufgabe_loeschen()
+    if wahl == 4:"""
+#versuch 2
+import os
+
+def load_tasks():           #Lade aufgaben aus todo.txt
+    if not os.path.exists("todo.txt"):
+        return[]
+    with open("todo.txt", "r") as file:
+        return [line.strip().split(" | ") for line in file.readlines()]
+
+def save_tasks(tasks):          #Speicher Daten in todo.txt
+    with open("todo.txt", "w") as file:
+        for task in tasks:
+            file.write(" | ".join(task) +  "\n")
+
+def display_tasks(tasks):       #Aufgaben anzeigen und Fehlerausgabe bei 0 Aufgaben
+    if not tasks:
+        print("Keine Aufgaben vorhaben.")
+        return
+    for idx, (task, date) in enumerate(tasks, 1):
+        print(f"{idx}. {task} (Fällig am: {date})")
+
+
+def main():
+    tasks = load_tasks()
+
+    while True:
+        print("\nTo-Do-Liste")
+        print("1.Aufgabe hinzuüfugen")
+        print("2.Alle Aufgaben anzeigen.")
+        print("3. Aufgabe bearbeiten")
+        print("4. Aufgabe löschen")
+        print("5. Aufgabe suchen")
+        print("6. Beenden")
+
+        choice = input("Wähle eine Option: ")
+
+        if choice == "1":
+            task = input("Aufgabe: ")
+            due_date = input("Fälligkeitsdatum : ")
+            tasks.append([task, due_date])
+            save_tasks(tasks)
+
+        elif choice == "2":
+            display_tasks(tasks)
+
+        elif choice == "3":
+            display_tasks(tasks)
+            try:
+                idx = int(input("Welche Aufgabe bearbeiten wir?: ")) - 1
+                task = input("Neue Aufgabe: ")
+                date = input("Neues Fälligkeitsdatum: ")
+                tasks[idx] = [task, date]
+                save_tasks(tasks)
+            except (ValueError, IndexError):
+                print("Ungültige Eingabe.")
+
+        elif choice == "4":
+            display_tasks(tasks)
+            try:
+                idx = int(input("Welche Aufgabe löschen wir?: ")) - 1
+                tasks.pop(idx)
+                save_tasks(tasks)
+            except (ValueError, IndexError):
+                print("Ungültige Eingabe.")
+
+        elif choice == "5":
+            keyword = input("Suchbegriff: ").lower()
+            results = [task for task in tasks if keyword in task[0].lower()]
+            if results:
+                for task in results:
+                    print(f"- {task[0]} (Fälligkeit am: {task[1]})")
+            else:
+                print("Keine passenden Aufgaben gefunden.")
+
+        elif choice == "6":
+            print("Programm wird beendet.")
+            break
+        else:
+            print("? was versuchen sie da")
+
+if __name__ == "__main__":
+    main()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
