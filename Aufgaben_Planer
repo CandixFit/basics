@@ -1,46 +1,4 @@
 
-import json
-from datetime import datetime
-"""speicheroption = []
-def show_menu():
-    print("\nBitte Wählne")
-    print("1. Aufgabe hinzufügen")
-    print("2. alle Aufgaben anzeigen")
-    print("3. Aufgabe bearbeiten")
-    print("4. Aufgabe löschen")
-    print("5. Beenden")
-show_menu()
-wahl = int(input())
-def aufgabe_hinzufuegen():
-    aufgabe = input("Aufgabe eingeben: ")
-    speicheroption.append(aufgabe)
-    print(speicheroption)
-
-def aufgaben_anzeigen():
-    print(speicheroption)
-
-def aufgabe_bearbeiten():
-    print("Welche Aufgabe bearbeiten?: ")
-    print(len(speicheroption))
-
-
-def aufgabe_loeschen():
-    print("Welche Aufgabe entfernen?")
-    speicheroption.remove()
-    print(speicheroption)
-def beenden():
-    print("programm beendet.")
-    break
-
-while True:
-    if wahl == 1:
-        aufgabe_hinzufuegen()
-    if wahl == 2:
-        aufgaben_anzeigen()
-    if wahl == 3:
-        aufgabe_loeschen()
-    if wahl == 4:"""
-#versuch 2
 import os
 
 def load_tasks():           #Lade aufgaben aus todo.txt
