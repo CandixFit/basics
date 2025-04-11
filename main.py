@@ -183,9 +183,9 @@ file.close()"""
     file.close()"""
 
 #schreiben von textdateien
-"""text = "die regierung hat mir in die hosen gekackt11!11!"
+text = "die regierung hat mir in die hosen gekackt11!11!"
 
 handle = open("text.txt", "w")
 geschrieben = handle.write(text)
 handle.close()
-print(text)"""
+print(text)
