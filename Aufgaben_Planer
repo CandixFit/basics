@@ -12,7 +12,7 @@ def save_tasks(tasks):          #Speicher Daten in todo.txt
         for task in tasks:
             file.write(" | ".join(task) +  "\n")
 
-def display_tasks(tasks):       #Aufgaben anzeigen und Fehlerausgabe bei 0 Aufgaben
+def display_tasks(tasks):       #Aufgaben anzeigen und Fehlerausgabe 
     if not tasks:
         print("Keine Aufgaben vorhaben.")
         return
